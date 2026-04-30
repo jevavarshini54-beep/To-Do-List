@@ -1,0 +1,36 @@
+.top-part{
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-box{
+  border: 2px solid grey;
+  color: grey;
+  width: 45%;
+  height: 30px;
+  align-content: center;
+  margin-left: 15%;
+}
+
+.calendar-icon{
+  width: 40px;
+  height: 40px;
+}
+
+.search-icon{
+  width: 30px;
+  height: 30px;
+  border: 2px solid grey;
+  background-color: grey;
+  margin-right: 17%;
+}
+
+.day{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5px;
+  align-items: center;
+}
