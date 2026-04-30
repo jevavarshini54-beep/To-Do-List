@@ -1,5 +1,5 @@
 .top-part{
-  background-color: antiquewhite;
+  background-color: #f5f7fa;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -9,6 +9,7 @@
 .search-box{
   border: 2px solid grey;
   color: grey;
+  font-size: 19px;
   width: 45%;
   height: 30px;
   align-content: center;
@@ -33,4 +34,48 @@
   flex-direction: column;
   margin-left: 1.5px;
   align-items: center;
+}
+
+.left-part img{
+  height: 50px;
+  width: 50px;
+}
+
+.bottom-part{
+  margin-top: 20px;
+}
+
+.left-part{
+  background-color: #f28482;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 80vh;
+  color: #f5f7fa;
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+}
+
+body{
+  margin: 0px;
+}
+
+.options{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+}
+
+.profile h3{
+  margin: 0px;
+}
+
+.profile {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
 }
