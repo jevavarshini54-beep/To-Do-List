@@ -43,13 +43,16 @@
 
 .bottom-part{
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .left-part{
   background-color: #f28482;
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 270px;
   height: 80vh;
   color: #f5f7fa;
   padding: 20px;
@@ -78,4 +81,82 @@ body{
   flex-direction: column;
   align-items: center;
   gap: 1px;
+}
+
+.dashboard h3{
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.dashboard{
+  background-color: #f5f7fa;
+  color: #f28482;
+  border: none;
+  border-radius: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin-left: -10px;
+}
+
+.right-part{
+  margin-left: 100px;
+  border: 2px solid gray;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px grey;
+  width: 1000px;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.left{
+  height: 75vh;
+  border: none;
+  flex: 1;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgb(180, 173, 173);
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.right{
+  flex: 1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgb(180, 173, 173);
+  height: 75vh;
+  margin-right: 20px;
+}
+
+.details img{
+  height: 20px;
+  margin-left: 250px;
+}
+
+.details{
+  margin-left: 30px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.today-tasks{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.task-1, .task-2, .task-3{
+  width: 87%;
+  height: 120px;
+  border: 1.8px solid rgb(242, 132, 130,0.9);
+  border-radius: 13px;
 }
