@@ -109,17 +109,20 @@ body{
 
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 40px;
+  align-items: stretch;
+  gap: 20px;
+  box-sizing: border-box;
 }
 
 .left{
   height: 75vh;
   border: none;
   flex: 1;
+  min-width: 0px;
   border-radius: 15px;
   box-shadow: 2px 2px 5px rgb(180, 173, 173);
   margin-left: 20px;
+  margin-top: 20px;
 
   display: flex;
   flex-direction: column;
@@ -132,6 +135,8 @@ body{
   box-shadow: 2px 2px 5px rgb(180, 173, 173);
   height: 75vh;
   margin-right: 20px;
+  margin-top: 20px;
+  min-width: 300px;
 }
 
 .details img{
@@ -150,13 +155,72 @@ body{
 .today-tasks{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 50px;
   align-items: center;
 }
 
 .task-1, .task-2, .task-3{
-  width: 87%;
-  height: 120px;
-  border: 1.8px solid rgb(242, 132, 130,0.9);
+  margin-left: 0px;
+  width: 95%;
+  border: 4px solid rgb(242, 132, 130,0.9);
   border-radius: 13px;
+  justify-content: space-between;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-1 img, .task-2 img, .task-3 img {
+  padding-left: 15px;
+  margin-right: 15px;
+  margin-top: 9px;
+  flex-shrink: 0;
+}
+
+.task-1 h3, .task-2 h3, .task-3 h3{
+  margin: 0px;
+  margin-top: 9px;
+}
+
+.info{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  text-align: left;
+  padding-left: 1px;
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+
+.info p {
+  margin: 0;
+  color: gray;
+  
+}
+
+.activity{
+  margin-right: 2px;
+}
+
+.activity p{
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.task-1:hover, .task-2:hover, .task-3:hover {
+  transform: translateY(-15px);
+  background-color: #fff9f9;
+  border-color: #f28482;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
