@@ -45,9 +45,12 @@
         </div>
         <div class="today-tasks">
           <div class="task-1">
-            <img style="height: 15px; width: 15px;" src="Red-Circle.png" alt="red">
-            <div>
-              <h3>Attend friend's b'day party</h3>
+
+            <div class="activity">
+              <div class="title">
+                <img style="height: 15px; width: 15px;" src="Red-Circle.png" alt="red">
+                <h3>Attend friend's b'day party</h3>
+              </div>
               <p>Pick up cake from bakery and buy gift on the way....</p>
             </div>
             <div class="info">
@@ -56,10 +59,13 @@
               <p>Status : Not started</p>
             </div>
           </div>
+
           <div class="task-2">
-            <img src="Red-Circle.png" alt="red" style="height: 15px; width: 15px;">
             <div class="activity">
-              <h3>Book tickets from Chennai to Trichy</h3>
+              <div class="title">
+                <img src="Red-Circle.png" alt="red" style="height: 15px; width: 15px;">
+                <h3>Book tickets from Chennai to Trichy</h3>
+              </div>
               <p>Book 2 trains tickets, Journey date: May 4</p>
             </div>
             <div class="info">
@@ -69,9 +75,11 @@
             </div>
           </div>
           <div class="task-3">
-            <img src="Violet-Circle.png" alt="purple" style="height: 15px; width: 15px;">
-            <div>
-              <h3>Prepare for presentation</h3>
+            <div class="activity">
+              <div class="title">
+                <img src="Yellow-Circle.png" alt="purple" style="height: 15px; width: 15px;">
+                <h3>Prepare for presentation</h3>
+              </div>
               <p>Make ppt</p>
             </div>
             <div class="info">
@@ -84,7 +92,32 @@
       </div>
 
       <div class="right">
-        <div class="status"></div>
+        <div class="status">
+          <p class="status-title">Task Status</p>
+          <div class="graphs-container">
+
+            <div class="graph-item">
+              <div class="circle green" style="--perc: 84%;">
+                <div class="inner-content">84%</div>
+              </div>
+              <p><span class="dot green-dot"></span> Completed</p>
+            </div>
+
+            <div class="graph-item">
+              <div class="circle blue" style="--perc: 46%;">
+                <div class="inner-content">46%</div>
+              </div>
+              <p><span class="dot blue-dot"></span> In Progress</p>
+            </div>
+
+            <div class="graph-item">
+              <div class="circle red" style="--perc: 13%;">
+                <div class="inner-content">13%</div>
+              </div>
+              <p><span class="dot red-dot"></span> Not Started</p>
+            </div>
+          </div>
+        </div>
         <div class="completed-tasks">
           <div class="comp_task-1"></div>
           <div class="comp_task-2"></div>
